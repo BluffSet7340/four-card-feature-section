@@ -1,0 +1,57 @@
+//primary colours
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+//neutral
+
+$Very_Dark_Blue: hsl(234, 12%, 34%);
+$Grayish_Blue: hsl(229, 6%, 66%);
+$Very_Light_Gray: hsl(0, 0%, 98%);
+
+// Typography
+
+// Body Copy
+// Font size: 15px
+// Weights: 200, 400, 600
+
+*{
+    font-family: Poppins; //imported font from google fonts
+    // font-size: 16px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    
+}
+
+.desc{
+    // display: flex;
+    // flex-direction: column;
+    text-align: center;
+    // justify-content: center;
+    // align-items: center;
+    .light{
+        font-weight: 200;
+    }
+    .dark{
+        font-weight: 600;
+    }
+    .text{
+        color: $Grayish_Blue;
+        padding-top: 1rem;
+    }
+    // h1{
+    //     width: 500px;
+    // }
+    // p{
+    //     width: 500px;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    // }
+}
