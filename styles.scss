@@ -96,11 +96,36 @@ main{
            display: block;
            margin-left: auto;
     }
+
 }
 
+
+//desktop view
 @media (min-width: 768px){
     main .text{
         max-width: 500px; //pushes the paragraph to the left
         margin: auto; //this centres the paragraph
+    }
+
+    main .content{
+        max-width: 1400px;
+        display: flex;
+        margin: auto; //this centres all the cards horizontally
+        flex-wrap: wrap; 
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .content .card{
+        // flex: 1; //ensures that each card take up the same width
+        width: 400px;
+    }
+
+    // main .content .card:first-child, main .content .card:last-child
+    main .content .card:nth-child(odd){
+        transform: translateY(50%);
+    }
+    main .content:last-child{
+        padding-bottom: 5rem;
     }
 }
